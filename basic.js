@@ -2,8 +2,8 @@
 // tsconfig.json은 ts -> js 컴파일 시 옵션 설정 가능
 // 터미널에 tsc -w 입력하면 자동변환 -> 컴파일
 // 타입으로 쓸 수 있는 것 : string, number, boolean, bigint, null, undefined,[], {}
-var 이름 = "kim";
-이름 = "김박";
+var 이름1 = "kim";
+이름1 = "김박";
 // Type Error :
 var 이름2 = "kim"; // error : 'number' 형식은 'string' 형식에 할당할 수 없다.
 // 이름2 = 123;

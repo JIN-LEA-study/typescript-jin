@@ -3,8 +3,8 @@
 // 터미널에 tsc -w 입력하면 자동변환 -> 컴파일
 
 // 타입으로 쓸 수 있는 것 : string, number, boolean, bigint, null, undefined,[], {}
-let 이름: string = "kim";
-이름 = "김박";
+let 이름1: string = "kim";
+이름1 = "김박";
 
 // Type Error :
 let 이름2: string = "kim"; // error : 'number' 형식은 'string' 형식에 할당할 수 없다.
