@@ -51,7 +51,7 @@ const 걍친구: Justfriend = {
 // 방법 1. type 변수, union type으로 합치기
 type Name = string;
 type Age = number;
-type Person = Name | Age; // string 또는 number가 들어온다.
+type Eric = Name | Age; // string 또는 number가 들어온다.
 
 // 방법 2. & 연산자로 object 타입 합치기
 type PositionX = { x: number };
