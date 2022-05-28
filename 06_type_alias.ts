@@ -57,7 +57,7 @@ type Eric = Name | Age; // string 또는 number가 들어온다.
 type PositionX = { x: number };
 type PositionY = { y: number };
 // 다음과 같이 만들려면 { x: number , y: number }
-type NewType = PositionX & PositionY; // 개발자 용어 : object를 extend한다.
+type NewType = PositionX & PositionY; // 개발자 용어 : object를 extends한다.
 let position: NewType = { x: 10, y: 20 };
 
 // (참고) 같은 이름의 type 변수 재정의 불가능
