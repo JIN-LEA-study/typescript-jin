@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true, // import * as React from 'react';
+    "sourceMap": true,
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "strict": true, // 이것이 없으면 ts의 의미가 없다.
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": { // import A from '../../../../hello.js' -> import A from @src/hello.js 절대 경로처럼 import 할 수 있다.
+      "@hooks/*": ["hooks/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@typings/*": ["typings/*"]
+    }
+  }
+}
+// ts->babel->js 중간에 끼는 이유는 프론트 개발시 css html 이미지 등이 있다. 모든 것을 js로 변환할 수 있다.
